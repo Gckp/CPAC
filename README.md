@@ -2,50 +2,50 @@
 
 ## cultureRelicRecognition.ipynb
 
-1. 类型：python文件
-2. 打开工具：jupyter notebook
-3. 实现功能：
-   1. 自定义了数据集，实现了取image和label的方式
-   2. 定义模型：使用了官方提供的预训练模型
-   3. 训练模型：总共训练了三个模型，分别是：alexnet、vgg13、vgg16
+1. Type: python file
+2. Open the tool: jupyter notebook
+3. Realize function:
+   1. Customize the data set and realize the way to get image and label
+   2. Define the model: use the official pre-training model
+   3. Training model: a total of three models are trained, namely: alexnet, vgg13, vgg16
 
 ## system
 
-1. system.py：实现系统界面的python文件，使用了PyQt5框架
-2. system.ui：系统界面的布局文件，可以使用Qt Desginer打开修改和设计
-3. ui.py：       system.ui通过命令行转换得到的python文件
+1. system.py: The python file that implements the system interface, using the PyQt5 framework
+2. system.ui: The layout file of the system interface, you can use Qt Desginer to open, modify and design
+3. ui.py: python file converted from system.ui via command line
 
 ## models
 
-1. AlexNet.pth：使用文物数据集在AlexNet预训练模型的基础上训练得到的模型
-2. alexnet-owt-7be5be79.pth：Pytorch官方提供的AlexNet的预训练模型
-3. VGG13.pth：使用文物数据集在VGG13预训练模型的基础上训练得到的模型
-4. vgg13_bn-abd245e5.pth：Pytorch官方提供的VGG13的预训练模型
-5. VGG16.pth：使用文物数据集在VGG16预训练模型的基础上训练得到的模型
-6. vgg16_bn-6c64b313.pth：Pytorch官方提供的VGG16的预训练模型
+1. AlexNet.pth: A model trained on the basis of the AlexNet pre-trained model using the cultural relics data set
+2. alexnet-owt-7be5be79.pth: the pre-trained model of AlexNet officially provided by Pytorch
+3. VGG13.pth: a model trained on the basis of the VGG13 pre-training model using the cultural relics data set
+4. vgg13_bn-abd245e5.pth: the pre-trained model of VGG13 officially provided by Pytorch
+5. VGG16.pth: A model trained on the basis of the VGG16 pre-training model using the cultural relics data set
+6. vgg16_bn-6c64b313.pth: the pre-trained model of VGG16 officially provided by Pytorch
 
 ## train
 
-1. train.csv：记录图片与其类别的对应关系
-2. imgs：训练数据集
-   1. 类别：6
-   2. 各个类别的数据量：（jin，270）、    （tang，238）、（song，217）
-      	                             （yuan，279）、（ming，270）、（qing，274）
+1. train.csv: record the correspondence between pictures and their categories
+2. imgs: training data set
+   1. Category: 6
+   2. The amount of data in each category: (jin, 270), (tang, 238), (song, 217)
+      (Yuan, 279), (ming, 270), (qing, 274)
 
 ## val
 
-1. val.csv：记录验证集中图片与数据的对应关系
-2. imgs：验证数据集
-   1. 类别：6
-   2. 各个类别的数据量：（jin，30）、    （tang，30）、 （song，30）
-      	                            （yuan，30）、（ming，30）、（qing，30）      
+1. val.csv: Record the corresponding relationship between pictures and data in the verification set
+2. imgs: validation data set
+   1. Category: 6
+   2. The amount of data in each category: (jin, 30), (tang, 30), (song, 30)
+      (Yuan, 30), (ming, 30), (qing, 30)
 
 ## test
 
-1. imgs：测试数据
+1. imgs: test data
 
-## 数据风格说明
+## Data style description
 
-1. jin：罐（土色，偏陶器）                   tang：瓶（偏陶器，土色）     
-2. song：碗（纯色，瓷器风格）            yuan：瓶（长颈）     
-3. ming：碗（青花瓷风格）                  qing：盘（多彩）
+1. jin: pot (earth color, partial pottery) tang: bottle (partial pottery, earthy color)
+2. song: bowl (pure color, porcelain style) yuan: bottle (long neck)
+3. ming: bowl (blue and white porcelain style) qing: plate (colorful)
